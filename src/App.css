@@ -1,0 +1,114 @@
+.App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resetButton {
+  font-size: 0.75rem;
+  background: none;
+  border: 2px solid #ccc;
+  padding: 0.25em 0.75em;
+  margin: 0 1em 1em 1em;
+  outline: none;
+}
+
+.resetButton:hover {
+  cursor: pointer;
+}
+
+.board {
+  background: rgb(189, 189, 189);
+  border: 1px solid rgb(150, 150, 150);
+  font-size: 1rem;
+  margin-bottom: 2em;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.cellContents--initial,
+.cellContents--isCleared,
+.cellContents--isFlag,
+.cellContents--isMine {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 100ms ease;
+}
+
+.cellContents--isFlag {
+  background: rgba(0, 255, 0, 0.192);
+}
+
+.cellContents--initial {
+  border-top: 4px solid rgb(255, 255, 255);
+  border-left: 4px solid rgb(255, 255, 255);
+  border-right: 4px solid rgb(123, 123, 123);
+  border-bottom: 4px solid rgb(123, 123, 123);
+}
+
+.cellContents--initial:hover {
+  cursor: pointer;
+  background: lightgray;
+}
+
+.cellContents--isFlag,
+.cellContents--isCleared {
+  border: 1px solid rgb(150, 150, 150);
+}
+
+.isLosingSquare {
+  background: #FC0008;
+}
+
+.cellContents--isMine {
+  border: 1px solid rgb(150, 150, 150);
+}
+
+.flex {
+  display: flex; 
+ }
+ 
+ .flex-column {
+  display: flex;
+  flex-direction: column; 
+ }
+ 
+/* Coloring the numbers */
+
+ .a1 {
+   color: rgb(12, 12, 216);
+ }
+ .a2 {
+   color: rgb(5, 128, 5);
+ }
+ .a3 {
+   color: rgb(255, 6, 6);
+ }
+ .a4 {
+   color: rgb(10, 10, 97);
+ }
+ .a5 {
+   color: rgb(85, 10, 10);
+ }
+ .a6 {
+   color: rgb(19, 168, 173);
+ }
+ .a7 {
+   color: rgb(0, 0, 0);
+ }
+ .a8 {
+   color: rgb(105, 105, 105);
+ }
